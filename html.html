@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'HTML | L'HTML pour les Nuls</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>L'HTML pour les Nuls</h1>
+        <h2>Apprenez les bases de l'HTML/CSS avec Dylan The Best</h2>
+
+        <ul class="menu">
+            <a href="index.html"><img src="img/logo-html.png" alt="Retour à l'accueil" title="Retour à l'accueil"
+                    class="logo-menu"></a>
+            <li><a href="html.html" class="active">L'HTML</a></li>
+            <li><a href="css.html">Le CSS</a></li>
+            <li><a href="exercice.html">Exercices</a></li>
+        </ul>
+
+    </header>
+
+    <section class="sec1">
+
+        <h2 style="font-size: 300%; text-decoration: underline;">L'HTML :</h2>
+
+        <section class="som">
+            <h3>Sommaire : </h3>
+            <a href="#introduction">1.Introduction à l'HTML</a>
+            <a href="#structure" class="a">1.1.La structure d'une page HTML</a>
+            <a href="#balises-texte" class="a">1.2.Les Balises de Texte</a>
+            <a href="#balises-section" class="a">1.3.Les Balises de Section</a>
+            <a href="#structuration">2.Structuration du contenu</a>
+            <a href="#listes" class="a">2.1.Les listes</a>
+            <a href="#tableau" class="a">2.2.Les Tableaux</a>
+            <a href="#image-media">3.Image et Média</a>
+            <a href="#image" class="a">3.1.Les Images</a>
+            <a href="#lien" class="a">3.1.Les Liens hypertextes</a>
+            <a href="#conclusion">4.Conclusion</a>
+
+        </section>
+
+        <h2 id="introduction" style="text-decoration: underline;">1.Introduction à l'HTML</h3>
+
+            <h3 style="color: rgb(255, 196, 0);" id="structure">1.1.La structure d'une page HTML :</h3>
+            <p>Nous avons vu ensemble ce qu'est l'HTML, mais avant d'apprendre à créer notre page, nous <br>
+                allons voir comment ce présente la structure de notre page HTML sur Visual Studio Code.</p>
+
+            <p>Lorsque l'on va créer notre premier fichier (page) HTML sur VS Code, nous allons le nommer <br>
+                obligatoirement <strong>index.html</strong></p>
+            <p>(si vous ne savez ni créer un projet sur VS Code <br>
+                ni quoi que ce soit, n'hésitez pas à me poser la question je vous répondrait avec plaisir (Sauf
+                mathéo).)
+            </p>
+
+            <h3>Analysons donc cette image</h3>
+            <img src="img/page-html-vide.png" alt="Page HTML vide" title="Page HTML vide" width="90%">
+
+
+
+            <h4 style="margin-top: 5%;">
+                < head> :
+            </h4>
+            <img src="img/head.png" alt="Image de la balise head" title="Balise head" width="80%">
+
+            <p>La balise <strong>
+                    < head>
+                </strong> est une balise HTML qui est utilisée pour contenir des <br>
+                informations sur le document HTML, mais qui ne sont pas directement visible sur la page web.<br>
+            </p>
+
+            <p>On y retrouve les balises < meta> que l'on va passé, et également la balise <strong>
+                        < title>
+                    </strong>. <br>
+                    La balise <strong>
+                        < title>
+                    </strong> est le titre de votre page, il sera <strong> afficher dans les l'onglets sur votre
+                        navigateur web.</strong></p>
+
+
+
+            <h4 style="margin-top: 5%;">
+                < body> :
+            </h4>
+            <img src="img/body.png" alt="Image de la balise body" title="Balise body" width="80%">
+
+            <p>La balise <strong>
+                    < body>
+                </strong> en HTML est utilisée pour <strong>définir le contenu principal d'une page web.</strong> <br>
+                C'est à l'intérieur de cette balise que vous placez tout ce que les visiteurs verront sur votre site.
+                <br>
+                En d'autres termes, le contenu que vous mettez entre les balises < body> sera <strong> affiché à
+                        l'écran.</strong>
+            </p>
+
+            <p>C'est donc ici que nous créerons notre pages à partire de balise (texte, titres, section,...)</p>
+
+
+            <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="balises-texte">1.2.Les Balises de Texte :</h3>
+
+            <h4>
+                < h1>, < h2>, < h3>, ...
+            </h4>
+            <p>Les balises < h1>, < h2>, < h3>, et ainsi de suite, sont utilisées pour <strong>définir les titres et les
+                                <br>
+                                sous-titres</strong> d'une page HTML. Elles sont essentielles pour organiser et
+                            hiérarchiser le contenu de manière <br>
+                            claire et compréhensible.</p>
+
+            <h4>
+                < p>
+            </h4>
+            <p>La balise <strong>
+                    < p>
+                </strong> est utilisée pour <strong>définir des paragraphes de texte</strong> dans une page HTML</p>
+
+            <h4>
+                < a>
+            </h4>
+            <p>La balise <strong>
+                    < a>
+                </strong> en HTML est utilisée pour <strong>créer des liens hypertextes</strong> conduisant donc vers
+                d'autres <br>
+                pages web, des fichiers, des adresses email, ou même d'autres emplacements sur la même page. </p>
+
+            <h4>
+                < strong>
+            </h4>
+            <p>La balise <strong>
+                    < strong>
+                </strong> est utilisée pour <strong>indiquer du texte qui doit être mis en évidence</strong>,
+                c'est-à-dire du texte important <br>
+                ou significatif qui doit être <strong> rendu en gras.</strong></p>
+
+
+            <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="balises-section">1.3.Les Balises de sections :</h3>
+
+            <h4>
+                < header>
+            </h4>
+            <p>La balise <strong>
+                    < header>
+                </strong> est utilisée pour <strong>définir l'en-tête d'une section ou de la page entière.</strong> Elle
+                contient généralement des éléments tels que des titres, des <br>
+                logos, des menus de navigation, etc.</p>
+
+            <h4>
+                < footer>
+            </h4>
+            <p>La balise <strong>
+                    < footer>
+                </strong> est utilisée pour <strong>définir le pied de page d'une section ou de la page
+                    entière.</strong> Elle contient <br>
+                souvent des informations de copyright, des liens vers des pages connexes, ou des informations de
+                contact.</p>
+
+            <h4>
+                < nav>
+            </h4>
+            <p>La balise <strong>
+                    < nav>
+                </strong> est utilisée pour définir une section de navigation. Elle contient généralement des liens vers
+                d'autres pages de votre site web.</p>
+
+            <h4>
+                < section>
+            </h4>
+            <p>La balise <strong>
+                    < section>
+                </strong> est utilisée pour <strong>définir des sections génériques ou des divisions thématiques dans le
+                    contenu.</strong> Elle est utile <br>
+                lorsque le contenu de la page est divisé en parties distinctes qui ont leur propre en-tête, paragraphe,
+                etc.</p>
+
+            <h4>
+                < div>
+            </h4>
+            <p>La balise <strong>
+                    < div>
+                </strong> est une balise générique utilisée pour diviser le contenu en conteneurs. Elle est souvent
+                utilisée avec des classes ou des identifiants CSS pour appliquer <br>
+                des styles ou des comportements spécifiques.</p>
+
+
+            <h2 id="structuration" style="text-decoration: underline; margin-top: 5%;">2.Structuration du contenu</h3>
+
+                <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="listes">2.1.Les listes :</h3>
+
+                <p>En HTML, une liste est <strong>un ensemble d'éléments ou d'objets regroupés de manière ordonnée ou désordonnée.</strong></p>
+                
+                <p>On peut retrouver <strong>différent types de liste</strong>, comme : <br>
+                <strong>Les listes à puces (< ul >) et les listes numérotées (< ol >)</strong></p>
+                <p><strong>Un élément de liste (< li >)</strong> viendra s'y placer entre. </p>
+
+                <h4>Les listes à puces (< ul >)</h4>
+                <p>Les listes à puces <strong>< ul ></strong> sont utilisées pour <strong>créer des listes non ordonnées</strong> où les éléments sont généralement présentés <br>
+                     avec <strong>des puces ou des symboles.</strong></p>
+                     <p>voici la Structure d'une liste à puce sur VS Code :</p>
+                     <img src="img/liste-puce.png" alt="Image de liste à puces" title="Image de listes à puce" width="90%">
+
+                     
+                     <h4>Les listes numérotées (< ol >)</h4>
+                <p>Les listes numérotées <strong>< ol ></strong> sont utilisées pour <strong>créer des listes ordonnées</strong> où les éléments sont <strong>numérotés.</strong></p>
+                    <p>Voici la structure d'une liste numérotée sur VS Code :</p>
+                    <img src="img/liste-numero.png" alt="Image de liste numérotée" title="Image de liste numérotée" width="90%">
+                    
+                    <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="tableau">2.2.Les Tableaux :</h3>
+
+                    <p>Les tableaux sont utilisés pour organiser les données sous forme de lignes et de colonnes, de la même manière qu'un tableau que l'on <br>
+                         pourrait dessiner sur du papier. </p>
+                    
+                    <h3>Structure de base d'un tableau :</h3>
+
+                    <h4>< table ></h4>
+                    <p>La balise <strong>< table ></strong> sert à <strong>définir le tableau.</strong></p>
+                    
+                    <h4>< tr ></h4>
+                    <p>La balise <strong>< tr ></strong> sert à <strong>définir une ligne du tableau.</strong></p>
+                    
+                    <h4>< th ></h4>
+                    <p>La balise <strong>< th ></strong> sert à <strong>définir une cellule d'en-tête</strong>, elle est utilisé pour <strong>indiquer le contenu de chaque colonne</strong>. <br>
+                    Les éléments < th > sont généralement affichés en gras et centré par défaut.</p>
+                    
+                    <h4>< td ></h4>
+                    <p>La balise <strong>< td ></strong> sert à <strong>définir une cellule de données</strong>, les données de tableau contiennent les <strong>informations rélles que vous  <br>
+                    souhaitez afficher dans le tableau</strong>. Les élément < td > sont généralement affichés en texte normal</p>
+
+                    <p>Voici un exemple de structure d'un tableau sur VS Code :</p>
+                    <img src="img/tableau.png" alt="Image d'un tableau sur VS Code" title="Tableau sur VS Code" width="90%">
+
+                    <p>(Nous pourons styliser notre tableau à l'aide du CSS mais ça, c'est pour plus tard.)</p>
+
+                    <h2 id="image-media" style="text-decoration: underline; margin-top: 5%;">3.Image et Média</h3>
+
+                    <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="image">3.1.Les Images :</h3>
+                    
+                    <p>Une image est un élément visuel qui peut être affiché sur une page web pour montrer des photos, des graphiques ou des illustrations. </p>
+                    
+                    <h4>< img ></h4>
+                    
+                    <P>La balise <strong>< img ></strong> est utilisé pour <strong>afficher des images sur une page web</strong>.</P>
+                    
+                    <p>Voici la structure du code sur VS Code :</p>
+                    
+                    <img src="img/img.png" alt="Image du code image" title="Image du code d'une image sur VS Code" width="80%">
+
+                    <p><strong> "src" :</strong> désigne l'emplacement de votre image (ici c'est "img/thomas.jpeg"). L'image doit être <strong>stocké dans le même <br>
+                        dossier que la page HTML</strong> (souvent dans un dossier image).</p>  
+                    <p><strong>"alt" :</strong> texte alternatif qui s'affiche si l'image ne peut pas être chargée (une déscription de l'image).</p>
+                    <p><strong>"title" : </strong> title est un ajout utile lorsque l'on passe notre souris sur l'image, pour affiché un texte. Tout comme l'atribut alt <br>
+                    il décrit l'image (mais en moins gros)  </p>
+
+
+                    <h3 style="margin-top: 5%; color: rgb(255, 196, 0);" id="lien">3.1.Les Liens hypertextes :</h3>
+
+                    <p>Un lien hypertexte est un élément qui permet de <strong>connecter une page web à une autre page web</strong>, à une ressource <br>
+                       en ligne ou à une adresse email.</p>
+
+                    <h4>< a ></h4>
+                        
+                    <p>Comme nous l'avons vu un peu plus haut (Balises de texte), la balise <strong>< a ></strong> est utilisée pour créer des liens hypertextes.</p>
+                        
+                    <p>voici la structure du code sur VS Code :</p>
+                        
+                    <img src="img/lien.png" alt="Image du code d'un lien sur VS Code" title="Image du code d'un lien sur VS Code" width="80%">
+
+                    <h4>L'attribut "href" : </h4>
+                    
+                    <p>L'attribut <strong>href</strong> contient <strong>l'URL de la page web ou de la ressource</strong> vers laquelle le lien doit mener (lien externe). Il peut également <br>
+                    
+                        <strong>contenir une page de votre site</strong> (lien interne), il faudrat simplement y mettre le nom du fichier, comme : index.html.</p>
+                    
+                    <p><strong>Entre les deux balises < a ></strong> nous allons y inscrire <strong>un texte du lien visible par les utilisateurs</strong>, un texte qui indique où le lien mène</p>
+
+                    <h2 id="conclusion" style="text-decoration: underline; margin-top: 5%;">4.Conclusion</h3>
+                    
+                        <h3>Nous en avons fini pour les bases de l'html, voici ce que nous avons <br>
+                           déja vu :</h3>
+
+                        <p>-La Structure d'une page HTML</p>
+                        <p>-Les Balises de Texte</p>
+                        <p>-Les Balises de sections</p>
+                        <p>-Les listes</p>
+                        <p>-Les Tableaux</p>
+                        <p>-Les Images</p>
+                        <p>-Les Liens hypertextes</p>
+
+                    <h3>Passons maintenant au CSS.</h3>
+
+
+
+    </section>
+
+
+
+
+
+    <footer>
+        <p>Copyright © 2023-2024 Dylan Delcour. Tout droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
