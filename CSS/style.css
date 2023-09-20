@@ -40,6 +40,13 @@ h4 {
     padding-bottom: 4%;
 }
 
+.vdo{
+
+width: 1280px;
+height: 720px;
+
+}
+
 
 /*Sommaire*/
 
@@ -146,6 +153,13 @@ footer {
     .menu li a {
         padding: 14px;
         font-size: 150%;
+    }
+
+        .vdo{
+
+        width: 320px;
+        height: 180px;
+
     }
 
 
